@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+	
+	int i=1;
+	char alpha=97;
+	
+	while(alpha >= 97 || alpha <= 122){
+		
+		printf("%c\t",alpha);
+		
+		alpha++;
+
+	if(alpha > 122 || alpha < 97){
+		
+		break;
+	}
+	}
+
+
+}
+

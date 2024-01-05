@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   
+ int n,count=10,mul;
+ 
+  printf("Enter a Number for Multiplication = ");
+     scanf("%d",&n);
+     
+ do{
+     mul=count*n;
+
+     printf("%d x %d = %d\n",n,count,mul);
+
+     count--;
+ }  
+ while(count>=1);
+
+    return 0;
+}

@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int n1, n2, sum, minus, mul, divi;
+    char choice;
+
+    do {
+        printf("Enter a First Number = ");
+        scanf("%d", &n1);
+
+        printf("Enter Second Number = ");
+        scanf("%d", &n2);
+
+        printf("Press 'a' for Addition\nPress 's' for Subtraction\nPress 'm' for Multiplication\nPress 'd' for Division\n");
+        scanf(" %c", &choice); // Note the space before %c to consume the newline character
+
+        if (choice == 'a') {
+            sum = n1 + n2;
+            printf("The Sum of %d and %d = %d\n", n1, n2, sum);
+        }
+        else if (choice == 's') {
+            minus = n1 - n2;
+            printf("The Subtraction of %d and %d = %d\n", n1, n2, minus);
+        }
+        else if (choice == 'm') {
+            mul = n1 * n2;
+            printf("Product of %d and %d = %d\n", n1, n2, mul);
+        }
+        else if (choice == 'd') {
+            if (n2 != 0) {
+                divi = n1 / n2;
+                printf("Division of %d and %d = %d\n", n1, n2, divi);
+            } else {
+                printf("Second Number must be greater than Zero\n");
+            }
+        } else {
+            printf("Invalid choice. Please enter 'a', 's', 'm', or 'd'.\n");
+        }
+    } while (1); // Continue until the user decides to exit
+
+    return 0;
+}

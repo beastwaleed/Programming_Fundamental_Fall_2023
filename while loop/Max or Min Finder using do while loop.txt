@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int n1,n2;
+    char choice;
+
+    do {
+        printf("Enter First Number = ");
+        scanf("%d", &n1);
+
+        printf("Enter Second Number = ");
+        scanf("%d", &n2);
+
+        
+        if(n1>n2){
+            
+            printf("%d is Maximum and %d is Minimum\n",n1,n2);
+        }
+        else{
+            
+             printf("%d is Maximum and %d is Minimum\n",n2,n1);
+        }
+
+        printf("Do you want to continue? (y/n): ");
+        scanf(" %c", &choice); 
+
+    } while (choice == 'y' || choice == 'Y');
+
+    return 0;
+}

@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+int main() {
+    int totalscore = 0;
+    char choice;
+    int wicket;
+
+    printf("Cricket Score Calculator by <Waleed Afzal> \n");
+
+    for (int ballnum = 1; ballnum < 300; ballnum++) {
+        int runs;
+
+        printf("Enter runs for ball %d (or you can press 'n' to exit): ", ballnum);
+        scanf(" %c", &choice);
+ 
+        switch (choice)  {
+            
+            case 'w':
+            wicket++;
+            printf("Updated Score with wickets are = %d / %d\n", totalscore,wicket);
+            break;
+          
+            case 'n': //checking if user enter n alphabhet
+                printf("Program Exited because you pressed 'n'\n");
+                return 0; // Exiting the program if user press n alphabhet 
+    
+                case '0':
+                runs =0; // add runs = 0 as per choice of user
+                totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+                printf("Updated Score = %d \n",totalscore);
+                break;
+            
+        case '1': 
+                runs = 1; // add runs =1 as per choice of user 
+                totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+                printf("Updated Score: %d\n", totalscore);
+                break;
+
+            case '2':
+                runs = 2; // add runs =2 as per choice of user 
+                 totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+                printf("Updated Score: %d\n", totalscore);
+                break;
+
+            case '3':
+                runs = 3; // add runs =3 as per choice of user 
+                 totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+                printf("Updated Score: %d\n", totalscore);
+                break;
+
+            case '4':
+                runs = 4; // add runs = 4 as per choice of user 
+                totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+                printf("Updated Score: %d\n", totalscore);
+                break;
+
+            case '5': 
+                runs = 5; // add runs = 5 as per choice of user 
+                totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+                printf("Updated Score: %d\n", totalscore);
+                break;
+
+
+                case '6':
+                   runs = 6; /// add runs = 6 as per choice of user 
+                 totalscore =totalscore+runs; //add the runs in total score and loop will continue the score
+               
+                break;
+                
+             default: //default; if a user press any number bigger than 6 or lesser than 1 or simply if user enter a value that is not mentioned in switch
+             
+               printf("Invalid input!! You have entered an invalid character.\n"); // so print invalid input
+              break; //break the swtich 
+        }
+    }
+
+    return 0;
+}
+ 

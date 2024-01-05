@@ -1,0 +1,624 @@
+#include <stdio.h>
+
+int main() {
+    int year;
+    char q1,q2,q3,q4,q5,choice;
+    int difficulty;
+    
+    do {
+    
+        printf("\t-----WELCOME TO WOOKY QUIZ-----\n");
+        printf("\tPress 1 for Easy Quiz\n\tPress 2 for Medium Quiz\n\tPress 3 for Hard Quiz\n\tEnter Your Choice [1-3] = ");
+        scanf("%d",&difficulty);
+    
+        switch(difficulty){
+            
+        case 1:
+         if(difficulty==1){
+             printf("\nAre You Kidding Bro! I Didn't Expect this from You, You Just decided to Choose Easy level\n");
+     
+           printf("\n");
+
+             printf("Q1; How many continents are there on Earth?\n(a; 20)\n(b; 7)\n(c; 15)\n(d; 50)\nOption[a-d] = ");
+             scanf(" %c",&q1);
+             
+                if(q1=='b'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+                
+            printf("Q2: Who was the first man on the moon?\n(a; Lance Armstrong)\n(b; George Washington)\n(c; Neil Armstrong)\n(d; Me)\nOption [a-d] = " );
+            
+             scanf(" %c",&q2);
+             
+                if(q2=='c'){
+                    
+                        printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+            
+             printf("Q3: How many months in a year have only 28 days?\n(a; 1)\n(b; 5)\n(c; 12)\n(d; 100)Option [a-d] = ");
+
+            scanf(" %c",&q3);
+             
+                if(q3=='a'){
+                    
+                        printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+                
+            printf("Q4: Which among the following produces honey?\n(a; Wasp)\n(b; Bee)\n(c; Spider)\n(d; Cat)\nOption [a-d] = ");
+
+            scanf(" %c",&q4);
+             
+                if(q4=='b'){
+                    
+                        printf("Correct Answer\n");
+                }
+
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+                
+              printf("Q5: 0 multiplied by any number gives the result as ___ ?\n(a; 100)\n(b; 0)\n(c; 50)\n(d; Its Half)\nOption [a-d] = ");
+        
+                  scanf(" %c",&q5);
+             
+                if(q5=='b'){
+                    
+                        printf("Correct Answer\n");
+                }
+
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+                
+            printf("Easy Level Completed\n");
+            
+            if(q1=='b' && q2=='c' && q3=='a' && q4=='b' && q5=='b'){
+                
+                printf("You got all MCQS Correct, Your IQ is 1000\n");
+                    break;
+            }
+            
+            if(q1!='b' && q2!='c' && q3!='a' && q4!='b' && q5!='b'){
+                
+                printf("You got all MCQS Wrong, Your IQ is -∞\n");
+                break;
+                
+                
+            }
+            
+                
+            if(q1=='b' && q2!='c' && q3!='a' && q4!='b' && q5!='b'){
+                
+                printf("You got Only 1 MCQ Correct, Your IQ is -100\n");
+            
+                break;
+            }
+                
+            if(q1!='b' && q2=='c' && q3!='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 1 MCQ Correct, Your IQ is -100\n");
+            break;
+                
+                
+            }
+            
+            if(q1!='b' && q2!='c' && q3=='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 1 MCQ Correct, Your IQ is -100\n");
+            break;
+                
+            }
+              
+            if(q1!='b' && q2!='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 1 MCQ Correct, Your IQ is -100\n");
+            break;
+            }
+              
+             if(q1!='b' && q2!='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 1 MCQ Correct, Your IQ is -100\n");
+         break;
+                 
+                 
+             }
+         
+          if(q1=='b' && q2=='c' && q3!='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+              
+          }
+         
+          if(q1=='b' && q2!='c' && q3=='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+              
+          }
+         
+          if(q1=='b' && q2!='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+                break;
+        
+         }
+         
+          if(q1=='b' && q2!='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+              break;
+              
+          }
+         
+          if(q1=='b' && q2=='c' && q3!='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+              
+          }
+         
+          if(q1!='b' && q2=='c' && q3=='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+              
+          }
+         
+         
+         if(q1!='b' && q2=='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+             break;
+             
+         }
+         
+         if(q1!='b' && q2=='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+             
+             
+         }
+         
+         
+          if(q1=='b' && q2!='c' && q3=='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+              
+          }
+         
+          if(q1!='b' && q2=='c' && q3=='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+          }
+         
+          if(q1=='b' && q2!='c' && q3=='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         break;
+              
+              
+          }
+         
+         
+          if(q1!='b' && q2!='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+              break;
+         }
+         
+          if(q1=='b' && q2!='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+              break;
+         }
+         
+        if(q1!='b' && q2=='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+        
+                break;
+         }
+         
+          if(q1!='b' && q2!='c' && q3=='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+                break;
+        
+         }
+         
+        
+        
+        if(q1!='b' && q2!='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }
+        
+          if(q1=='b' && q2!='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+              break;
+              
+          }
+        
+        
+          if(q1!='b' && q2=='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+        
+            break;
+         }
+         
+         
+        if(q1!='b' && q2!='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }
+         
+        if(q1!='b' && q2!='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+        } 
+        
+          
+        if(q1!='b' && q2!='c' && q3=='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+                break;
+        }  
+         
+          
+        if(q1!='b' && q2=='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+                
+                    break;
+         } 
+         
+          
+        if(q1!='b' && q2=='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        } 
+         
+          
+        if(q1!='b' && q2=='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+        } 
+         
+          
+        if(q1!='b' && q2=='c' && q3=='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        } 
+         
+         
+         if(q1=='b' && q2!='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+             break;
+         } 
+        
+          
+        if(q1=='b' && q2!='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+    
+                break;
+         }      
+             
+          
+        if(q1=='b' && q2!='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }     
+             
+          
+        if(q1=='b' && q2!='c' && q3=='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }      
+             
+          
+        if(q1!='b' && q2=='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+    
+            break;
+    
+         }      
+             
+          
+        if(q1=='b' && q2!='c' && q3!='a' && q4=='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+            
+        }      
+             
+          
+        if(q1=='b' && q2=='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }      
+             
+          
+        if(q1=='b' && q2=='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }      
+             
+          
+        if(q1=='b' && q2=='c' && q3!='a' && q4=='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+        
+                break;
+        
+         }      
+             
+          
+        if(q1!='b' && q2=='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }      
+             
+        if(q1=='b' && q2!='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+            break;
+            
+        }      
+             
+        if(q1=='b' && q2=='c' && q3!='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+        
+            break;
+         }       
+             
+        if(q1=='b' && q2=='c' && q3=='a' && q4!='b' && q5!='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+        
+            break;
+         }       
+             
+         if(q1!='b' && q2=='c' && q3=='a' && q4!='b' && q5=='b'){
+                
+              printf("You got Only 2 MCQ Correct, Your IQ is -10\n");
+         
+             break;
+         } 
+            
+             
+         }
+        
+         case 2:
+         
+        if(difficulty==2){
+                
+            printf("\nI am Proud of You bro , for Choosing Medium level\n");
+
+             printf("Q1; How many zeroes are there in 1 million?\n(a; 5)\n(b; 6)\n(c; 9)\n(d; 50)\nOption [a-d] = ");
+             scanf(" %c",&q1);
+
+
+              if(q1=='b'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+
+         printf("Q2; Spinach is high in:___ \n(a; Vitamin C)\n(b; Iron)\n(c; Biotin)\n(d; Fat)\nOption [a-d] = ");
+             scanf(" %c",&q2);
+
+
+              if(q2=='b'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+
+          printf("Q3; What year was NASA founded? \n(a; 1958)\n(b; 2012)\n(c; 1999)\n(d; Not Found Yet)\nOption [a-d] = ");
+             scanf(" %c",&q3);
+
+
+              if(q3=='a'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+
+            printf("Q4; Who was the 23rd president of the US? \n(a; Abraham lincoln)\n(b; George washington)\n(c; Benjamin Harrison)\n(d; Barack Obama)\nOption [a-d] = ");
+             scanf(" %c",&q4);
+
+
+              if(q4=='c'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+        
+             printf("Q5; WHICH STATE HAS HIGHEST POPULATION IN INDIA ?\n(a; MAHARASHTRA)\n(b; BIHAR)\n(c; UTTAR PRADESH)\n(d; PUNJAB)\nOption [a-d] = ");
+             scanf(" %c",&q5);
+
+
+              if(q5=='c'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+                
+            printf("Medium Level Completed\n");
+
+
+            }
+        
+        case 3:
+        if(difficulty==3){
+            
+             printf("\nYou are Just Amazing Bro, I know can do It, Let's GO! \n");
+
+             printf("Q1; What comes once in a minute, twice in a moment, but never in a thousand years?\n(a; Letter 'm')\n(b; Coin)\n(c; Minute)\n(d; Clock)\nOption [a-d] = ");
+             scanf(" %c",&q1);
+
+
+              if(q1=='a'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+            
+            
+             printf("Q2; You see a boat filled with people. It has not sunk, but when you look again, you don't see a single person on the boat. Why?\n(a; They all jumped off the boat)\n(b;  It was a mirage)\n(c; The boat is empty)\n(d; They are all married)\nOption [a-d] = ");
+             scanf(" %c",&q2);
+
+
+              if(q2=='d'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+                
+                
+        printf("Q3; I am a three-digit number. My tens digit is five more than my ones digit, and my hundreds digit is eight less than my tens digit. What number am I?\n(a; 195)\n(b;  285)\n(c; 376)\n(d; 420)\nOption [a-d] = ");
+             scanf(" %c",&q3);
+
+
+              if(q3=='b'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+
+         printf("Q4; Solve the equation: 2x + 7 = 15?\n(a; x=4)\n(b; x=5)\n(c; x=6)\n(d; x=7)\nOption [a-d] = ");
+             scanf(" %c",&q4);
+
+
+              if(q4=='a'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+
+        printf("Q5; What comes next in this sequence: 1, 4, 9, 16, 25, ?\n(a; 36)\n(b; 49)\n(c; 64)\n(d; 81)\nOption [a-d] = ");
+             scanf(" %c",&q5);
+
+
+              if(q5=='c'){
+                    
+                    printf("Correct Answer\n");
+                }
+                else{
+                    
+                    printf("Wrong Answer\n");
+                }
+    
+        printf("\aCongrats!! You Completed Hard Level\n");
+    
+        } 
+        
+        }
+        
+    
+        printf("Do you want to continue? (y/n): ");
+        scanf(" %c", &choice); 
+
+    } while (choice == 'y' || choice == 'Y');
+
+  
+    return 0;
+
+}

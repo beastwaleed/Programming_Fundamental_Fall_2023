@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main() {
+    int marksobtained, totalmarks, grade;
+    char choice;
+        
+    do {
+
+         printf("Enter Marks Obtained = ");
+        scanf("%d", &marksobtained);
+
+        printf("Enter Total Marks = ");
+        scanf("%d", &totalmarks);
+        
+        grade= (marksobtained*100)/totalmarks;
+        
+        if(grade >= 90 && grade <= 99){
+            
+            printf("You Got A+ Grade\n");
+        } 
+
+    else if(grade >= 80 && grade <= 89){
+        
+        printf("You got A Grade\n");
+    }
+
+    else if (grade >= 70 && grade <= 79){
+        
+      printf("You got B Grade\n");
+    }
+    
+    else if(grade >=60 && grade <= 69){
+        
+            printf("You got C Grade\n");
+    }
+
+    else if(grade >= 50 && grade <= 59){
+        
+             printf("You got D Grade\n");
+    }
+    else if(grade >= 40 && grade <=49 ){
+        
+      printf("You got E Grade\n");
+    }
+    
+    else{
+        
+        printf("You are Failed! Improve Your Studies\n");
+    }
+    
+    printf("Do you want to continue? (y/n): ");
+        scanf(" %c", &choice); // Consume newline and read the choice
+    
+    } while (choice=='y' || choice=='Y'); // Continue until the user decides to exit
+
+    return 0;
+}

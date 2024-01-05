@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int year;
+    char choice;
+
+    do {
+        printf("Enter Year to Check Whether it is a Leap Year or not = ");
+        scanf("%d", &year);
+
+        if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+            
+            printf("%d is a Leap Year\n",year);
+    
+        }
+    
+        else{
+            
+             printf("%d is not a Leap Year\n",year);
+        }
+
+        printf("Do you want to continue? (y/n): ");
+        scanf(" %c", &choice); 
+
+    } while (choice == 'y' || choice == 'Y');
+
+    return 0;
+}
